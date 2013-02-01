@@ -334,7 +334,7 @@ def tick(feeds, options, formatter, iteration):
             entries = reversed(entries)
 
         for entry in entries:
-            out = formatter(entry)
+            out = '+' + formatter(entry)
             print(out.rstrip(' '))
 
         # needed for fetching/showing only new entries on next run
